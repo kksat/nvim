@@ -12,3 +12,5 @@ vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile", "BufEnter" }, {
 		vim.opt.filetype = "yaml.ansible"
 	end,
 })
+
+-- vim.g.copilot_filetypes = { "*" = true }
