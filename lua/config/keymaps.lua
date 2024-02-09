@@ -5,3 +5,7 @@
 vim.keymap.set("n", "<leader>ug", ":Twilight<cr>", { desc = "Twilight" })
 vim.keymap.set("n", "<cr>", require("hop").hint_words, { desc = "HopWord" })
 vim.keymap.set("n", "<leader>uz", "<cmd>ZenMode<cr>", { desc = "Zen Mode" })
+vim.keymap.set("v", "<leader>te", function()
+	require("ansible").run()
+end, { desc = "Run selected Ansible" })
+vim.keymap.set("n", "<leader>te", "<cmd>:lua require('ansible').run()<CR>", { desc = "Run Ansible" })
