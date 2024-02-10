@@ -3,7 +3,7 @@ return {
 		"jackMort/ChatGPT.nvim",
 		event = "VeryLazy",
 		config = function()
-			require("chatgpt").setup({ api_key_cmd = os.getenv("CHATGPT_API_KEY") })
+			require("chatgpt").setup()
 		end,
 		dependencies = {
 			"MunifTanjim/nui.nvim",
@@ -15,10 +15,6 @@ return {
 	{
 		"folke/which-key.nvim",
 		event = "VeryLazy",
-		init = function()
-			vim.o.timeout = true
-			vim.o.timeoutlen = 10
-		end,
 		opts = {
 			require("which-key").register({
 				a = {
