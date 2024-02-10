@@ -37,8 +37,7 @@ return {
 						mode = { "n", "v" },
 					},
 				},
-				{ prefix = "<leader>" },
-			}),
+			}, { prefix = "<leader>" }),
 		},
 	},
 }
