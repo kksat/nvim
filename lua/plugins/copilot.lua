@@ -1,5 +1,9 @@
 return {
-  {
-    "github/copilot.vim",
-  },
+	{
+		"github/copilot.vim",
+	},
+	{
+		"zbirenbaum/copilot.lua",
+		disable = true,
+	},
 }
