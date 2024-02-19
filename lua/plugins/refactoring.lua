@@ -15,6 +15,6 @@ return {
 		vim.keymap.set("n", "<leader>cp", function()
 			---@diagnostic disable-next-line: missing-parameter
 			require("refactoring").select_refactor()
-		end, { desc = "Primeagen Refactore" })
+		end, { desc = "Primeagen Refactoring" })
 	end,
 }
