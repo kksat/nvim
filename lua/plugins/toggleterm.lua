@@ -28,7 +28,7 @@ return {
 
 		vim.api.nvim_set_keymap(
 			"n",
-			"<leader>gd",
+			"<leader>Dl",
 			"<cmd>lua _lazydocker_toggle()<CR>",
 			{ desc = "Lazydocker", noremap = true, silent = true }
 		)
