@@ -12,7 +12,11 @@ return {
 				-- custom mapping
 				{
 					pattern = "tox.ini",
-					target = "*/requirements*.txt",
+					target = {
+						"*/requirements*.txt",
+						"*/*/requirements*.txt",
+						"requirements*.txt",
+					},
 					context = "tox",
 				},
 				{
