@@ -20,9 +20,17 @@ return {
 					context = "tox",
 				},
 				{
-					pattern = "tox.ini",
-					target = "requirements*.txt",
-					context = "tox",
+					pattern = "ansible_collections/.*/.*/.*/.*/(.*).py",
+					target = "tests/*/*/*/test_%1.py",
+					context = "python tests",
+				},
+				{
+					pattern = "ansible_collections/.*/.*/.*/.*/(.*).py",
+					target = {
+						"tests/*/*/test_%1.yml",
+						"tests/*/*/*/test_%1.yml",
+					},
+					context = "ansible tests",
 				},
 			},
 			transformers = {
