@@ -1,5 +1,6 @@
 return {
 	"Vigemus/iron.nvim",
+	lazy = true,
 	config = function()
 		require("iron.core").setup({
 			config = {

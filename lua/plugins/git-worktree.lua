@@ -1,5 +1,6 @@
 return {
 	"ThePrimeagen/git-worktree.nvim",
+	lazy = true,
 	dependencies = { "nvim-lua/plenary.nvim", "nvim-telescope/telescope.nvim" },
 	config = function()
 		require("git-worktree").setup()

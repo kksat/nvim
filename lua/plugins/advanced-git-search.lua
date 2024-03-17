@@ -1,5 +1,6 @@
 return {
 	"aaronhallaert/advanced-git-search.nvim",
+	lazy = true,
 	config = function()
 		-- optional: setup telescope before loading the extension
 		require("telescope").setup({
