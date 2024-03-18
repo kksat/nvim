@@ -18,7 +18,7 @@ return {
 					"dockerls",
 					"lua_ls",
 					"marksman",
-					"pylsp",
+					"python-lsp-server",
 					"yamlls",
 				},
 			})
