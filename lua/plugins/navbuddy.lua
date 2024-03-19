@@ -8,13 +8,13 @@ return {
 				"MunifTanjim/nui.nvim",
 			},
 			opts = { lsp = { auto_attach = true } },
-		},
-	},
-	keys = {
-		{
-			"<leader>cb",
-			"<cmd>Navbuddy<cr>",
-			desc = "NavBuddy",
+			keys = {
+				{
+					"<leader>cb",
+					"<cmd>Navbuddy<cr>",
+					desc = "NavBuddy",
+				},
+			},
 		},
 	},
 }
