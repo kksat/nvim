@@ -13,8 +13,6 @@ return {
 					"bashls",
 					"ansiblels",
 					"bicep",
-					"cmake",
-					"neocmake",
 					"dockerls",
 					"lua_ls",
 					"marksman",
