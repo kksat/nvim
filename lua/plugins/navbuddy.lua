@@ -8,14 +8,13 @@ return {
 				"MunifTanjim/nui.nvim",
 			},
 			opts = { lsp = { auto_attach = true } },
-			config = function()
-				vim.api.nvim_set_keymap(
-					"n",
-					"<leader>cb",
-					"<cmd>Navbuddy<cr>",
-					{ noremap = false, silent = true, desc = "NavBuddy" }
-				)
-			end,
+		},
+	},
+	keys = {
+		{
+			"<leader>cb",
+			"<cmd>Navbuddy<cr>",
+			desc = "NavBuddy",
 		},
 	},
 }
