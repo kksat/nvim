@@ -87,4 +87,11 @@ return {
 			},
 		})
 	end,
+	keys = {
+		{
+			"<leader>fo",
+			"<cmd>Other<CR>",
+			desc = "Other file",
+		},
+	},
 }
