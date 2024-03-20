@@ -34,6 +34,7 @@ M.config = function()
 		}),
 		sources = cmp.config.sources({
 			{ name = "nvim_lsp" },
+			{ name = "copilot" },
 			{ name = "nvim_lua" },
 			{ name = "luasnip" }, -- For luasnip users.
 			-- { name = "orgmode" },
