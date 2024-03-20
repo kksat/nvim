@@ -3,7 +3,7 @@
 -- Add any additional keymaps here
 
 vim.keymap.set("n", "<leader>ug", ":Twilight<cr>", { desc = "Twilight" })
-vim.keymap.set("n", "<cr>", require("hop").hint_words, { desc = "HopWord" })
+vim.keymap.set("n", "<leader><cr>", require("hop").hint_words, { desc = "HopWord" })
 vim.keymap.set("n", "<leader>uz", "<cmd>ZenMode<cr>", { desc = "Zen Mode" })
 vim.keymap.set("v", "<leader>te", function()
 	require("ansible").run()
