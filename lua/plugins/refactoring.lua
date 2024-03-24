@@ -11,10 +11,14 @@ return {
 		require("refactoring").setup({
 			show_success_message = true,
 		})
-
-		vim.keymap.set("n", "<leader>cp", function()
-			---@diagnostic disable-next-line: missing-parameter
-			require("refactoring").select_refactor()
-		end, { desc = "Primeagen Refactoring" })
 	end,
+	keys = {
+		{
+			"<leader>cp",
+			function()
+				require("refactoring").select_refactor()
+			end,
+			desc = "Primeagen Refactoring",
+		},
+	},
 }
