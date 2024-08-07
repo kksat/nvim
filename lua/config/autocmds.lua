@@ -27,4 +27,11 @@ vim.api.nvim_create_autocmd("User", {
 			create_buffer_local_mappings()
 		end)
 	end,
+
+vim.api.nvim_create_autocmd("FileType", {
+  group = vim.api.nvim_create_augroup("FixBicepCommentString", { clear = true }),
+  callback = function(ev)
+    vim.bo[ev.buf].commentstring = "// %s"
+  end,
+  pattern = { "bicep", "bicepparam" },
 })
