@@ -6,6 +6,7 @@ return {
 		vim.o.timeoutlen = 10
 	end,
 	opts = {
+    delay = 200,
 		require("which-key").register({
 			g = {
 				name = "+Git",
