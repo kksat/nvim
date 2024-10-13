@@ -3,10 +3,9 @@ return {
   event = "VeryLazy",
   init = function()
     vim.o.timeout = true
-    vim.o.timeoutlen = 10
+    vim.o.timeoutlen = 400
   end,
   opts = {
-    delay = 400,
     require("which-key").register({
       g = {
         name = "+Git",
