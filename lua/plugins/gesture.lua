@@ -4,9 +4,6 @@ return {
     vim.opt.mouse = "a"
     vim.opt.mousemoveevent = true
 
-    vim.keymap.set("n", "<LeftDrag>", [[<Cmd>lua require("gesture").draw()<CR>]], { silent = true })
-    vim.keymap.set("n", "<LeftRelease>", [[<Cmd>lua require("gesture").finish()<CR>]], { silent = true })
-
     -- or if you would like to use right click
     vim.keymap.set("n", "<RightMouse>", [[<Nop>]])
     vim.keymap.set("n", "<RightDrag>", [[<Cmd>lua require("gesture").draw()<CR>]], { silent = true })
