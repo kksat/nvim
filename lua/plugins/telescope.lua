@@ -15,12 +15,6 @@ return {
     },
   },
   config = function()
-    vim.keymap.set(
-      "n",
-      "<leader>b/",
-      "<cmd>Telescope current_buffer_fuzzy_find<cr>",
-      { desc = "Current buffer fuzzy find" }
-    )
     require("telescope").setup({
       defaults = {
         mappings = {
