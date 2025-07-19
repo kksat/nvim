@@ -1,17 +1,14 @@
 {
   "extras": [
-    "lazyvim.plugins.extras.dap.core",
-    "lazyvim.plugins.extras.test.core",
     "lazyvim.plugins.extras.ai.copilot",
     "lazyvim.plugins.extras.coding.luasnip",
+    "lazyvim.plugins.extras.dap.core",
     "lazyvim.plugins.extras.dap.nlua",
-    "lazyvim.plugins.extras.test.core",
+    "lazyvim.plugins.extras.editor.aerial",
     "lazyvim.plugins.extras.editor.leap",
     "lazyvim.plugins.extras.lang.ansible",
     "lazyvim.plugins.extras.lang.cmake",
     "lazyvim.plugins.extras.lang.docker",
-    "lazyvim.plugins.extras.lang.go",
-    "lazyvim.plugins.extras.lang.haskell",
     "lazyvim.plugins.extras.lang.helm",
     "lazyvim.plugins.extras.lang.json",
     "lazyvim.plugins.extras.lang.markdown",
@@ -19,8 +16,8 @@
     "lazyvim.plugins.extras.lang.yaml",
     "lazyvim.plugins.extras.lsp.neoconf",
     "lazyvim.plugins.extras.lsp.none-ls",
-    "lazyvim.plugins.extras.vscode",
-    "lazyvim.plugins.extras.editor.aerial"
+    "lazyvim.plugins.extras.test.core",
+    "lazyvim.plugins.extras.vscode"
   ],
   "install_version": 7,
   "news": {
