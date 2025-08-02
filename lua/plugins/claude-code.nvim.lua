@@ -8,12 +8,12 @@ return {
       window = {
         position = "float",
         float = {
-          width = "100%",    -- Take up 90% of the editor width
-          height = "100%",   -- Take up 90% of the editor height
-          row = "center",    -- Center vertically
-          col = "center",    -- Center horizontally
+          width = "100%",
+          height = "100%",
+          row = "center",
+          col = "center",
           relative = "editor",
-          border = "double", -- Use double border style
+          border = "double",
         },
       },
     })
