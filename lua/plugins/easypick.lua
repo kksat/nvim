@@ -1,5 +1,6 @@
 return {
   'axkirillov/easypick.nvim',
+  enabled = false,
   requires = 'nvim-telescope/telescope.nvim',
   config = function()
     local easypick = require("easypick")
