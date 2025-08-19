@@ -1,6 +1,7 @@
 return {
   "apple/pkl-neovim",
   lazy = true,
+  enabled = false,
   ft = "pkl",
   dependencies = {
     {
