@@ -24,3 +24,15 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
   pattern = { "bicep", "bicepparam" },
 })
+
+-- Vimwiki auto-commit on save
+vim.api.nvim_create_autocmd("BufWritePost", {
+  pattern = "~/vimwiki/*",
+  callback = function()
+    local filename = vim.fn.expand("%:t")
+    local timestamp = os.date("%Y-%m-%d %H:%M:%S")
+    local commit_msg = string.format("%s - %s", filename, timestamp)
+    vim.fn.system(string.format('cd "%s" && git add . && git commit -m "%s" && git push origin', vim.fn.expand("%:p:h"),
+      commit_msg))
+  end,
+})
