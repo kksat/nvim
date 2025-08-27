@@ -36,7 +36,8 @@ local function async_git_commit_vimwiki()
     string.format([[
       cd "%s" &&
       git add "%s" &&
-      git commit -m "%s - %s" 2>/dev/null || true
+      git commit -m "%s - %s" 2>/dev/null &&
+      git push origin || true
     ]], vim.fn.expand('%:p:h'), filepath, filename, os.date('%Y-%m-%d %H:%M:%S'))
   }, {
     on_exit = function(_, exit_code)
