@@ -42,6 +42,7 @@ local function async_git_commit_vimwiki()
     on_exit = function(_, exit_code)
       if exit_code == 0 then
         -- Silently committed
+        vim.notify('Git commit and push successful' .. filename, vim.log.levels.INFO)
       else
         vim.notify('Git commit and push failed for ' .. filename, vim.log.levels.ERROR)
       end
