@@ -58,7 +58,7 @@ local vimwiki_git_group = vim.api.nvim_create_augroup('VimwikiGitAuto', { clear 
 -- Autocommand for vimwiki files
 vim.api.nvim_create_autocmd({ 'BufWritePost' }, {
   group = vimwiki_git_group,
-  pattern = { vim.fn.expand('~/vimwiki/*') }, -- Adjust patterns for your vimwiki files
+  pattern = { vim.fn.expand('~/vimwiki/*.wiki'), },
   callback = async_git_commit_vimwiki,
   desc = 'Auto-commit vimwiki files to git asynchronously'
 })
