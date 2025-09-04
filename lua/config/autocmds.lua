@@ -68,3 +68,13 @@ vim.api.nvim_create_autocmd({ 'BufWritePost' }, {
 vim.api.nvim_create_user_command('VimwikiGitCommit', async_git_commit_vimwiki, {
   desc = 'Manually commit current vimwiki file to git'
 })
+
+vim.api.nvim_create_autocmd("BufReadCmd", {
+  pattern = "*.duckdb",
+  callback = function(opts)
+    -- Close the buffer opened by nvim
+    vim.api.nvim_command("bwipeout " .. opts.buf)
+    vim.cmd("terminal duckdb -ui " .. vim.fn.fnameescape(opts.match))
+    vim.cmd("startinsert")
+  end,
+})
