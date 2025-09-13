@@ -8,7 +8,7 @@ return {
 		},
 		{
 			"<leader>gt",
-			"<cmd>DiffviewFileHistory<CR>",
+			"<cmd>DiffviewFileHistory %<CR>",
 			desc = "Open Diffview File History",
 		},
 	},
