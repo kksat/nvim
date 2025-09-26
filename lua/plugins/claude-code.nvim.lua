@@ -17,5 +17,8 @@ return {
         },
       },
     })
-  end
+  end,
+  keys = {
+    { "<leader>cc", "<cmd>ClaudeCode<cr>", desc = "ClaudeCode" },
+  }
 }
