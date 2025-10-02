@@ -11,7 +11,7 @@ return {
     {
       "<leader>ah",
       "<cmd>CopilotChatToggle<CR>",
-      mode = "n",
+      mode = { "n", "v" },
       desc = "GitHub Copilot Chat",
     },
   },
