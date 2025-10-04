@@ -15,22 +15,6 @@ vim.keymap.set("n", "<leader>cn", "<cmd>Neoformat<cr>", { desc = "Format with Ne
 vim.keymap.set("n", "<leader>bt", "<cmd>Telescope buffers<cr>", { desc = "Telescope list buffers" })
 
 local Terminal = require("toggleterm.terminal").Terminal
-local gemini_term = nil
-
-vim.keymap.set("n", "<leader>gm", function()
-  if not gemini_term then
-    gemini_term = Terminal:new({
-      cmd = "gemini",
-      direction = "float",
-      size = 1.0,
-      float_opts = {
-        border = "curved",
-        title = "Gemini CLI",
-      },
-    })
-  end
-  gemini_term:toggle()
-end, { desc = "Toggle Gemini CLI" })
 
 local opencode_term = nil
 vim.keymap.set("n", "<leader>oc", function()
