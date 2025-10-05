@@ -1,11 +1,12 @@
 return {
-	"michaelb/sniprun",
-	branch = "master",
+  "michaelb/sniprun",
+  enabled = false,
+  branch = "master",
   build = "sh install.sh",
-	config = function()
-		require("sniprun").setup({
-			live_mode_toggle = "enable",
-		})
-		-- configure keymap for :SnipLive
-	end,
+  config = function()
+    require("sniprun").setup({
+      live_mode_toggle = "enable",
+    })
+    -- configure keymap for :SnipLive
+  end,
 }
