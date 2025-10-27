@@ -14,3 +14,7 @@ if vim.g.neovide then
   vim.g.neovide_cursor_animate_in_insert_mode = true
   vim.g.neovide_cursor_animate_command_line = true
 end
+
+for i = 1, 9 do
+  vim.api.nvim_set_keymap('n', '<leader>' .. i, i .. 'gt', { noremap = true, silent = true })
+end
