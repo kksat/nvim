@@ -56,7 +56,7 @@ vim.keymap.set("n", "<leader>at", function()
       size = 1.0,
       float_opts = {
         border = "curved",
-        title = "Opencode CLI",
+        title = "GitHub Copilot CLI",
       },
     })
   end
