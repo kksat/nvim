@@ -46,3 +46,19 @@ vim.keymap.set("n", "<leader>k", function()
   end
   gemini_term:toggle()
 end, { desc = "Toggle K9S CLI" })
+
+local github_copilot_terminal = nil
+vim.keymap.set("n", "<leader>at", function()
+  if not github_copilot_terminal then
+    github_copilot_terminal = Terminal:new({
+      cmd = "copilot",
+      direction = "float",
+      size = 1.0,
+      float_opts = {
+        border = "curved",
+        title = "Opencode CLI",
+      },
+    })
+  end
+  github_copilot_terminal:toggle()
+end, { desc = "Toggle GitHub Copilot CLI" })
