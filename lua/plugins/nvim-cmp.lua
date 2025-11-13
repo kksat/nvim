@@ -33,7 +33,7 @@ M.config = function()
 			["<CR>"] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
 		}),
 		sources = cmp.config.sources({
-			{ name = "luasnip" }, -- For luasnip users.
+			{ name = "luasnip" },
 			{ name = "nvim_lsp" },
 			{ name = "copilot" },
 			{ name = "nvim_lua" },
