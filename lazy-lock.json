@@ -99,6 +99,7 @@
   "other.nvim": { "branch": "main", "commit": "1d48e090f6d1d53dda9fb5094af3f2006ebbb858" },
   "otter.nvim": { "branch": "main", "commit": "fc0aa35b1985077d11a20ddf4006bf40f2cd7397" },
   "outline.nvim": { "branch": "main", "commit": "6b62f73a6bf317531d15a7ae1b724e85485d8148" },
+  "overseer.nvim": { "branch": "master", "commit": "36298eab791cca87ac3a228933413d094423400e" },
   "pendulum-nvim": { "branch": "main", "commit": "bdae9ebefdf359acbddc76b59c143f51d581d543" },
   "persistence.nvim": { "branch": "main", "commit": "166a79a55bfa7a4db3e26fc031b4d92af71d0b51" },
   "pipeline.nvim": { "branch": "main", "commit": "d14a27ba7f25ecb72e28bb9844672de99b151eaa" },
