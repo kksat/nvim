@@ -5,7 +5,7 @@ return {
       shell = "bash",
       win = {
         wo = {
-          winbar = "%{get(b:, 'term_title', '')}",
+          winbar = "%y %n %f",
         },
         height = 0,
         width = 0,
