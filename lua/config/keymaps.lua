@@ -5,7 +5,6 @@
 vim.keymap.set("n", "<leader>ug", ":Twilight<cr>", { desc = "Twilight" })
 vim.keymap.set("n", "<leader><cr>", require("hop").hint_words, { desc = "HopWord" })
 vim.keymap.set("n", "<leader>m", "<cmd>Telescope make<cr>", { desc = "Makefile" })
-vim.keymap.set("n", "<leader>cn", "<cmd>Neoformat<cr>", { desc = "Format with Neoformat" })
 
 vim.keymap.set("n", "<leader>bt", "<cmd>Telescope buffers<cr>", { desc = "Telescope list buffers" })
 
