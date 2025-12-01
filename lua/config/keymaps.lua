@@ -10,22 +10,6 @@ vim.keymap.set("n", "<leader>bt", "<cmd>Telescope buffers<cr>", { desc = "Telesc
 
 local Terminal = require("toggleterm.terminal").Terminal
 
-local opencode_term = nil
-vim.keymap.set("n", "<leader>oc", function()
-  if not opencode_term then
-    opencode_term = Terminal:new({
-      cmd = "opencode",
-      direction = "float",
-      size = 1.0,
-      float_opts = {
-        border = "curved",
-        title = "Opencode CLI",
-      },
-    })
-  end
-  opencode_term:toggle()
-end, { desc = "Toggle Opencode CLI" })
-
 local k9s_terminal = nil
 vim.keymap.set("n", "<leader>k", function()
   if not k9s_terminal then
