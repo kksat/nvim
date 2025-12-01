@@ -110,6 +110,7 @@
   "py-requirements.nvim": { "branch": "main", "commit": "2ea52d5a76fc6199b375c9f2013e72ff36b870d5" },
   "refactoring.nvim": { "branch": "master", "commit": "6784b54587e6d8a6b9ea199318512170ffb9e418" },
   "refjump.nvim": { "branch": "main", "commit": "571e60b34f751085e456b69f14ab12ae18d4c3fc" },
+  "sidekick.nvim": { "branch": "main", "commit": "c2bdf8cfcd87a6be5f8b84322c1b5052e78e302e" },
   "snacks.nvim": { "branch": "main", "commit": "fe7cfe9800a182274d0f868a74b7263b8c0c020b" },
   "sniprun": { "branch": "master", "commit": "a90c65846c3c18efc3f799d8b6dc26af9d4a69ed" },
   "tabout.nvim": { "branch": "master", "commit": "9a3499480a8e53dcaa665e2836f287e3b7764009" },
