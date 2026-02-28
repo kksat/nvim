@@ -6,6 +6,7 @@ return {
       win = {
         wo = {
           winbar = "%y %n %f",
+          conceallevel = 2,
         },
         height = 0,
         width = 0,
