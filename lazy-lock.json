@@ -1,7 +1,7 @@
 {
   "99": { "branch": "master", "commit": "215be1dabf558d0c260d5f4c5e818a185856f3c7" },
   "LazyVim": { "branch": "main", "commit": "28db03f958d58dfff3c647ce28fdc1cb88ac158d" },
-  "LuaSnip": { "branch": "master", "commit": "21e9fecfc07fb2cd707b6c7c3fa148550a34d053" },
+  "LuaSnip": { "branch": "master", "commit": "dae4f5aaa3574bd0c2b9dd20fb9542a02c10471c" },
   "SchemaStore.nvim": { "branch": "main", "commit": "aa25399c48236b77af71d4b64cdf157d2ba4e990" },
   "advanced-git-search.nvim": { "branch": "main", "commit": "e6d0fa39c7b058b4f3019912c3e26f854c4e36af" },
   "aerial.nvim": { "branch": "master", "commit": "3c42785790d401731e7809a25f27f62dae2fec12" },
