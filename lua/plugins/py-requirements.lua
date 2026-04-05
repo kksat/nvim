@@ -1,17 +1,35 @@
 return {
-  'MeanderingProgrammer/py-requirements.nvim',
-  dependencies = { 'nvim-treesitter/nvim-treesitter' },
+  "MeanderingProgrammer/py-requirements.nvim",
+  dependencies = { "nvim-treesitter/nvim-treesitter" },
+  keys = {
+    {
+      "<leader>ru",
+      function()
+        require("py-requirements").upgrade()
+      end,
+      desc = "Requirements: Upgrade",
+    },
+    {
+      "<leader>rU",
+      function()
+        require("py-requirements").upgrade_all()
+      end,
+      desc = "Requirements: Upgrade All",
+    },
+    {
+      "<leader>rK",
+      function()
+        require("py-requirements").show_description()
+      end,
+      desc = "Requirements: Show package description",
+    },
+  },
   config = function()
-    require('py-requirements').setup({
+    require("py-requirements").setup({
       file_patterns = {
-        'requirements.txt',
-        'requirements-*.txt',
-      }
+        "requirements.txt",
+        "requirements-*.txt",
+      },
     })
-    local requirements = require('py-requirements')
-    vim.keymap.set('n', '<leader>ru', requirements.upgrade, { silent = true, desc = 'Requirements: Upgrade' })
-    vim.keymap.set('n', '<leader>rU', requirements.upgrade_all, { silent = true, desc = 'Requirements: Upgrade All' })
-    vim.keymap.set('n', '<leader>rK', requirements.show_description,
-      { silent = true, desc = 'Requirements: Show package description' })
   end,
 }
