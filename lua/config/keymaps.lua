@@ -3,7 +3,9 @@
 -- Add any additional keymaps here
 
 vim.keymap.set("n", "<leader>ug", ":Twilight<cr>", { desc = "Twilight" })
-vim.keymap.set("n", "<leader><cr>", require("hop").hint_words, { desc = "HopWord" })
+vim.keymap.set("n", "<leader><cr>", function()
+  require("leap").leap({ windows = { vim.fn.win_getid() } })
+end, { desc = "Leap current window" })
 vim.keymap.set("n", "<leader>m", "<cmd>Telescope make<cr>", { desc = "Makefile" })
 
 vim.keymap.set("n", "<leader>bt", "<cmd>Telescope buffers<cr>", { desc = "Telescope list buffers" })
