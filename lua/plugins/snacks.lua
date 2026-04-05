@@ -1,6 +1,6 @@
 return {
   "folke/snacks.nvim",
-  config = {
+  opts = {
     terminal = {
       shell = "bash",
       win = {
@@ -12,7 +12,7 @@ return {
         width = 0,
         position = "float",
         border = "rounded",
-      }
-    }
+      },
+    },
   },
 }
