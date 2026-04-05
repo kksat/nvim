@@ -1,5 +1,6 @@
 return {
   "notomo/gesture.nvim",
+  keys = { "<RightDrag>", "<RightRelease>" },
   config = function()
     vim.opt.mouse = "a"
     vim.opt.mousemoveevent = true
