@@ -25,50 +25,6 @@ vim.api.nvim_create_autocmd("FileType", {
   pattern = { "bicep", "bicepparam" },
 })
 
-local function async_git_commit_vimwiki()
-  -- Get the current file path
-  local filepath = vim.fn.expand('%:p')
-  local filename = vim.fn.expand('%:t')
-
-  -- Run git commands asynchronously
-  vim.fn.jobstart({
-    'sh', '-c',
-    string.format([[
-      cd "%s" &&
-      git add "%s" &&
-      git commit -m "%s - %s" 2>/dev/null &&
-      git push origin || true
-    ]], vim.fn.expand('%:p:h'), filepath, filename, os.date('%Y-%m-%d %H:%M:%S'))
-  }, {
-    on_exit = function(_, exit_code)
-      if exit_code == 0 then
-        -- Silently committed
-        vim.notify('Git commit and push successful' .. filename, vim.log.levels.INFO)
-      else
-        vim.notify('Git commit and push failed for ' .. filename, vim.log.levels.ERROR)
-      end
-    end,
-    stdout_buffered = true,
-    stderr_buffered = true,
-  })
-end
-
--- Create autocommand group
-local vimwiki_git_group = vim.api.nvim_create_augroup('VimwikiGitAuto', { clear = true })
-
--- Autocommand for vimwiki files
-vim.api.nvim_create_autocmd({ 'BufWritePost' }, {
-  group = vimwiki_git_group,
-  pattern = { vim.fn.expand('~/vimwiki/*.wiki'), },
-  callback = async_git_commit_vimwiki,
-  desc = 'Auto-commit vimwiki files to git asynchronously'
-})
-
--- Optional: Add a command to manually trigger the commit
-vim.api.nvim_create_user_command('VimwikiGitCommit', async_git_commit_vimwiki, {
-  desc = 'Manually commit current vimwiki file to git'
-})
-
 vim.api.nvim_create_autocmd("BufReadCmd", {
   pattern = "*.duckdb",
   callback = function(opts)
