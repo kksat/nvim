@@ -1,5 +1,6 @@
 return {
   "sudo-tee/opencode.nvim",
+  active = false,
   config = function()
     require("opencode").setup({
       keymap_prefix = '<leader>O',
