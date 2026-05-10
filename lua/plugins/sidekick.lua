@@ -6,6 +6,9 @@ return {
         ["claude-yolo"] = {
           cmd = { "claude", "--dangerously-skip-permissions" },
         },
+        ["hermes"] = {
+          cmd = { "hermes"},
+        },
       },
     }
   }
