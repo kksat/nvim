@@ -12,6 +12,9 @@ return {
         ["hermes new worktree"] = {
           cmd = { "hermes", "--worktree" },
         },
+        ["kimi"] = {
+          cmd = { "kimi"},
+        },
       },
     }
   }
