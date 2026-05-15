@@ -18,6 +18,9 @@ return {
         ["kimi-yolo"] = {
           cmd = { "kimi", "--yolo" },
         },
+        ["agent"] = {
+          cmd = { "agent" },
+        },
       },
     }
   }
