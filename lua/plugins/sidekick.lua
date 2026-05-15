@@ -7,13 +7,16 @@ return {
           cmd = { "claude", "--dangerously-skip-permissions" },
         },
         ["hermes"] = {
-          cmd = { "hermes"},
+          cmd = { "hermes" },
         },
         ["hermes new worktree"] = {
           cmd = { "hermes", "--worktree" },
         },
         ["kimi"] = {
-          cmd = { "kimi"},
+          cmd = { "kimi" },
+        },
+        ["kimi-yolo"] = {
+          cmd = { "kimi", "--yolo" },
         },
       },
     }
