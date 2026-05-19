@@ -21,6 +21,9 @@ return {
         ["agent"] = {
           cmd = { "agent" },
         },
+        ["antigravity"] = {
+          cmd = { "agy" },
+        },
       },
     }
   }
