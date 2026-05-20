@@ -24,6 +24,9 @@ return {
         ["antigravity"] = {
           cmd = { "agy" },
         },
+        ["antigravity -yolo"] = {
+          cmd = { "agy", "--dangerously-skip-permissions" },
+        },
       },
     }
   }
