@@ -19,3 +19,19 @@ vim.keymap.set("n", "<leader>k", function()
   end
   k9s_terminal:toggle()
 end, { desc = "Toggle K9S CLI" })
+
+local pi_terminal = nil
+vim.keymap.set({ "n" }, "<leader>pi", function()
+  if not pi_terminal or (pi_terminal.buf_valid and not pi_terminal:buf_valid()) then
+    pi_terminal = Terminal.open("pi -c", {
+      win = {
+        position = "float",
+        height = 0,
+        width = 0,
+        border = "none",
+      },
+    })
+  else
+    pi_terminal:toggle()
+  end
+end, { desc = "Toggle Pi Agent (pi -c)" })
