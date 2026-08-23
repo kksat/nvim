@@ -30,6 +30,9 @@ return {
         ["gh dash"] = {
           cmd = { "gh", "dash" },
         },
+        ["omp"] = {
+          cmd = { "omp", },
+        },
       },
     }
   }
