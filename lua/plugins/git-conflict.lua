@@ -1,6 +1,7 @@
 return {
 	"akinsho/git-conflict.nvim",
 	version = "*",
+	event = "BufReadPost",
 	config = function()
 		require("git-conflict").setup({
 			debug = false,

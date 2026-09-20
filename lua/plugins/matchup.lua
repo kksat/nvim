@@ -1,6 +1,6 @@
 return {
   "andymass/vim-matchup",
-  lazy = false,
+  event = { "BufReadPost", "BufNewFile" },
   init = function()
     vim.g.matchup_matchparen_offscreen = { method = "popup" }
   end,
