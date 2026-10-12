@@ -3,6 +3,8 @@ require("config.lazy")
 
 vim.opt.swapfile = false
 
+vim.keymap.set({ "n", "v" }, "Q", "<cmd>quit<CR>", { desc = "Quit" })
+
 if vim.g.neovide then
   vim.keymap.set({ "n", "v" }, "<C-+>", ":lua vim.g.neovide_scale_factor = vim.g.neovide_scale_factor + 0.1<CR>")
   vim.keymap.set({ "n", "v" }, "<C-->", ":lua vim.g.neovide_scale_factor = vim.g.neovide_scale_factor - 0.1<CR>")
