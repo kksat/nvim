@@ -1,6 +1,10 @@
 -- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
 
+-- :LazyInstallAll — preinstall parsers, LSP servers and Mason tools (used by
+-- the dotfiles install.sh so the first nvim session installs nothing)
+require("config.install-all")
+
 vim.opt.swapfile = false
 
 vim.keymap.set({ "n", "v" }, "Q", "<cmd>quit<CR>", { desc = "Quit" })
