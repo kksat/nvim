@@ -32,7 +32,8 @@ require("lazy").setup({
 				"gzip",
 				-- "matchit",
 				"matchparen",
-				-- "netrwPlugin",
+				-- netrw is replaced by the snacks explorer (its replace_netrw option)
+				"netrwPlugin",
 				"tarPlugin",
 				"tohtml",
 				"tutor",
