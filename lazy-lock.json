@@ -79,7 +79,6 @@
   "nvim-ts-autotag": { "branch": "main", "commit": "d7220b55e16ed3c04e88086256def5d282429493" },
   "obsidian.nvim": { "branch": "main", "commit": "ae1f76a75c7ce36866e1d9342a8f6f5b9c2caf9b" },
   "one-small-step-for-vimkind": { "branch": "main", "commit": "1af6ffb9b5229a856e8090fa2f690e0931a5aace" },
-  "opencode.nvim": { "branch": "main", "commit": "7ed41d120990cd7b30e855e51ca65c1128e4f067" },
   "other.nvim": { "branch": "main", "commit": "1d48e090f6d1d53dda9fb5094af3f2006ebbb858" },
   "otter.nvim": { "branch": "main", "commit": "6f05811621460eca983bf2cd877e63c59a40720e" },
   "outline.nvim": { "branch": "main", "commit": "03ce1482222dc2bf1f781559508301f05382936d" },
@@ -120,6 +119,5 @@
   "vim-startuptime": { "branch": "master", "commit": "5f33e50f1e2e2a80370c9094e4c303ea54cd2aea" },
   "vimwiki": { "branch": "dev", "commit": "72792615e739d0eb54a9c8f7e0a46a6e2407c9e8" },
   "which-key.nvim": { "branch": "main", "commit": "3aab2147e74890957785941f0c1ad87d0a44c15a" },
-  "wtf.nvim": { "branch": "main", "commit": "010c779f84a151477f74398c8ead71e42d70b816" },
   "zen-mode.nvim": { "branch": "main", "commit": "8564ce6d29ec7554eb9df578efa882d33b3c23a7" }
 }
