@@ -1,6 +1,6 @@
--- zals — Zig Ansible Language Server, configured through the local
--- zals.nvim plugin (~/dev/zals.nvim): Ansible/Jinja filetype detection,
--- LSP defaults, and interactive commands (:ZalsCreateRole, ...).
+-- zals — Zig Ansible Language Server, configured through the zals.nvim
+-- plugin (https://github.com/kksat/zals.nvim): Ansible/Jinja filetype
+-- detection, LSP defaults, and interactive commands (:ZalsCreateRole, ...).
 --
 -- The plugin registers the config but does not enable it; LazyVim enables
 -- zals through its `servers` table instead. The server binary is installed
@@ -14,8 +14,7 @@
 -- Verify with :LspInfo while a playbook is open.
 return {
   {
-    dir = vim.fn.expand("~/dev/zals.nvim"),
-    name = "zals.nvim",
+    "kksat/zals.nvim",
     main = "zals",
     lazy = false,
     opts = { enabled = false }, -- LazyVim enables it below
