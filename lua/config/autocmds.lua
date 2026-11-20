@@ -6,6 +6,19 @@
 -- Add any additional autocmds here
 --
 
+-- When nvim is started with a file argument (e.g. `nvim playbook.yml`),
+-- LazyVim's LSP setup runs before VimEnter, and nvim then skips the
+-- retroactive LSP attach for that first buffer (vim.lsp.enable only
+-- re-attaches existing buffers when vim_did_enter or did_filetype is
+-- already set). This file loads on VeryLazy, after startup, so re-run
+-- nvim's own attach pass here; it is idempotent and only affects buffers
+-- that were missed.
+vim.defer_fn(function()
+  if next(vim.lsp._enabled_configs or {}) then
+    vim.cmd.doautoall("nvim.lsp.enable FileType")
+  end
+end, 100)
+
 vim.api.nvim_create_autocmd("User", {
   pattern = "GitConflictDetected",
   callback = function()
