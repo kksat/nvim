@@ -5,6 +5,9 @@
 vim.opt.conceallevel = 0
 -- Diagnostics virtual lines (built into nvim >= 0.11, replaces lsp_lines.nvim)
 vim.diagnostic.config({ virtual_lines = { only_current_line = true } })
+-- Hide LSP diagnostics by default; toggle with <leader>ud. Servers still
+-- publish them, only the display is off.
+vim.diagnostic.enable(false)
 
 vim.filetype.add {
   extension = {
